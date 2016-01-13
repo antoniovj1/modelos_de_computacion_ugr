@@ -1,0 +1,19 @@
+#Gitignore para latex.
+
+*.zip
+*.pdf
+*.aux
+*.fdb*
+*.log
+*.fls
+*.swp
+*.brf
+*.lof
+*.lot
+*.bbl
+*.blg
+*.gz
+*~
+*.toc
+*.out
+*.dvi

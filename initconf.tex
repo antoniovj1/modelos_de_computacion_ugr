@@ -1,0 +1,52 @@
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[spanish]{babel}
+\usepackage{cite}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{graphics,graphicx, float} %para incluir imágenes y colocarlas
+\usepackage[backref,colorlinks=true,linkcolor=black,urlcolor=blue,citecolor=blue]{hyperref} %Para crear enlaces en el pdf
+\usepackage[noabbrev,spanish]{cleveref}
+\usepackage{url}
+\usepackage[shortlabels]{enumitem}
+\usepackage{appendix}
+\usepackage{eurosym}
+\usepackage{epsfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{cancel}
+
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\AtBeginEnvironment{tikzpicture}{\shorthandoff{>}\shorthandoff{<}}{}{}
+\usetikzlibrary{arrows,automata,shapes}
+
+\definecolor{mycolor}{RGB}{255,255,153}
+
+\newcommand\Rcancel[1]{\renewcommand\CancelColor{\color{red}}\xcancel{#1}}
+\newcommand\Blue[1]{ { \color{blue} #1} }
+
+\renewcommand{\appendixname}{Anexo}
+\renewcommand{\appendixtocname}{Anexo}
+\renewcommand{\appendixpagename}{Anexo}
+
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{
+    \normalfont \normalsize
+    \textsc{{\bf Modelos de Computación(2015-2016)} \\ Grado en Ingeniería Informática \\ Universidad de Granada} \\ [25pt] % Your university, school and/or department name(s)
+    \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+    \huge Prácticas Modelos de Computación\\ % The assignment title
+    \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+    \textit{\textbf{{\color{red}\Huge Corregido: Calificación máxima.}}}
+}
+\author{Antonio de la Vega Jiménez }
+
+
+%*************************************************************
