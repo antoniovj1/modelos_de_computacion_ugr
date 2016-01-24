@@ -402,6 +402,33 @@ $ \hspace*{2.6cm}X_d\rightarrow d $        $ \hspace*{1cm}C\rightarrow CX_a\  |\
                                                                               $ \hspace*{5cm} Z_1\rightarrow CX_a\hspace{1cm}$ \newline
                                                                               $ \hspace*{5cm}Z_2\rightarrow DZ_3 \hspace{1cm} Z_3\rightarrow X_cX_d \hspace{0.8cm} Z_4\rightarrow X_cX_d\hspace{1cm}$ \newline
                                                                               $ \hspace*{5cm}Z_5\rightarrow AX_b\hspace{1cm} Z_6\rightarrow AX_b \hspace{1cm} Z_7\rightarrow DX_d\hspace{1cm}$ \newline
+                                                                              
+                                                                              
+\section{Práctica 7}
+\textit{Obtener una gramática libre del contexto que genere las palabras del lenguaje que reconoce un autómata con pila.}
+\newline
+
+Para realizar esta practica he elegido un autómata con pila que reconoce las palabras que contienen la misma cantidad de unos que de ceros:
+\newline
+
+$\hspace*{2.2cm}M=(\{q_1\},\{0,1\},\{R,X,Y\},\delta,q_1,R,\emptyset)$\newline
+
+$\hspace*{2.2cm}\delta (q_1,0,R) = \{(q_1,XR)\}$                                                       $ \hspace*{1cm}\delta (q_1,0,X) = \{(q_1,XX)\}$\newline
+$\hspace*{2.6cm}\delta (q_1,1,R) = \{(q_1,YR)\}$                                                        $ \hspace*{1cm}\delta (q_1,1,Y) = \{(q_1,YY)\}$\newline
+$\hspace*{2.6cm}\delta (q_1,1,X) = \{(q_1,\varepsilon )\}$                                     $ \hspace*{1.4cm}\delta (q_1,0,Y) = \{(q_1,\varepsilon )\}$\newline
+$\hspace*{2.6cm}\delta (q_1,\varepsilon ,R) = \{(q_1,\varepsilon )\}$\newline
+\newline
+A partir del autómata anterior obtenemos la siguiente gramática que genera las palabras que tiene el mismo número de unos que de ceros:
+\newline
+
+$ \hspace*{1.7cm} [q_1,R,q_1]\rightarrow 0[q_1,X,q_1][q_1,R,q_1] $      $ \hspace*{1.03cm} [q_1,X,q_1]\rightarrow 0[q_1,X,q_1][q_1,X,q_1] $   \newline
+$ \hspace*{2.1cm} [q_1,R,q_1]\rightarrow 1[q_1,Y,q_1][q_1,R,q_1] $       $ \hspace*{1.1cm} [q_1,Y,q_1]\rightarrow 1[q_1,Y,q_1][q_1,Y,q_1] $   \newline
+$ \hspace*{2.1cm} [q_1,X,q_1]\rightarrow 1 $                                             $ \hspace*{4.1cm} [q_1,Y,q_1]\rightarrow 0$   \newline
+$ \hspace*{2.1cm} [q_1,R,q_1]\rightarrow \varepsilon  $   \newline
+
+
+
+
 %*************************************************************
 
 
