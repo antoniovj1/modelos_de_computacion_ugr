@@ -5,3 +5,4 @@
 4. Lex
 5. Expresión regular, AFD y gramáticas lineales por la izquierda y derecha.
 6. Eliminación producciones nulas y unitarias, y forma normal de Chomsky.
+7. Obtener una gramática libre del contexto a partir de un autómata con pila.
