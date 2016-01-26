@@ -1,4 +1,5 @@
 # Prácticas modelos de computación
+==================================
 1. Interpretar gramática.
 2. Comprobar si un lenguaje es regular.
 3. Crear un autómata que reconozca un tipo de cadenas.
@@ -6,3 +7,8 @@
 5. Expresión regular, AFD y gramáticas lineales por la izquierda y derecha.
 6. Eliminación producciones nulas y unitarias, y forma normal de Chomsky.
 7. Obtener una gramática libre del contexto a partir de un autómata con pila.
+
+___
+###### Universidad de Granada (UGR)
+___
+
