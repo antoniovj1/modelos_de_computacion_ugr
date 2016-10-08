@@ -1,7 +1,6 @@
 #Gitignore para latex.
 
 *.zip
-*.pdf
 *.aux
 *.fdb*
 *.log
